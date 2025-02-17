@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: eranzaksh
+spec:
+  profile:
+    displayName: Eran Zaksh
+    email: eranzaksh@gmail.com.com
+    picture: https://example.com/staff/jenny-with-party-hat.jpeg
+  memberOf: [study, admin]
