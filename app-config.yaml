@@ -85,7 +85,7 @@ catalog:
     entityFilename: catalog-info.yaml
     pullRequestBranchName: backstage-integration
   rules:
-    - allow: [Component, System, API, Resource, Location]
+    - allow: [Component, System, API, Resource, Location, Group, User]
   locations:
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
     - type: file
@@ -107,6 +107,8 @@ catalog:
       target: https://raw.githubusercontent.com/eranzaksh/backstage/main/templates
     - type: file
       target: /templates
+      rules:
+        - allow: [Template]
 
     ## Uncomment these lines to add more example data
     # - type: url
