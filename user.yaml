@@ -4,7 +4,7 @@ metadata:
   name: eranzaksh
 spec:
   profile:
-    displayName: Eran Zaksh
-    email: eranzaksh@gmail.com.com
+    displayName: eranzaksh
+    email: eranzaksh@gmail.com
     picture: https://example.com/staff/jenny-with-party-hat.jpeg
   memberOf: [study, admin]
