@@ -7,4 +7,4 @@ spec:
     displayName: Eran Zaksh
     email: eranzaksh@gmail.com.com
     picture: https://example.com/staff/jenny-with-party-hat.jpeg
-  memberOf: [study, admin]
+  memberOf: [team, admin]
