@@ -63,6 +63,7 @@ techdocs:
     type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
 
 auth:
+  environment: development
   # see https://backstage.io/docs/auth/ to learn about auth providers
   providers:
     # See https://backstage.io/docs/auth/guest/provider
@@ -71,6 +72,10 @@ auth:
       development:
         clientId: ${AUTH_GITHUB_CLIENT_ID}
         clientSecret: ${AUTH_GITHUB_CLIENT_SECRET}
+        # signIn:
+        #   resolvers:
+        #     # See https://backstage.io/docs/auth/github/provider#resolvers for more resolvers
+        #     - resolver: usernameMatchingUserEntityName
 
 scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
@@ -100,6 +105,8 @@ catalog:
 
     - type: github
       target: https://raw.githubusercontent.com/eranzaksh/backstage/main/templates
+    - type: file
+      target: /templates
 
     ## Uncomment these lines to add more example data
     # - type: url
