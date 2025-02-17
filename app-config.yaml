@@ -98,6 +98,9 @@ catalog:
       rules:
         - allow: [User, Group]
 
+    - type: github
+      target: https://raw.githubusercontent.com/eranzaksh/backstage/main/templates
+
     ## Uncomment these lines to add more example data
     # - type: url
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml

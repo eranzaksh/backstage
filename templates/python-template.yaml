@@ -24,7 +24,7 @@ spec:
       input:
         url: "https://github.com/cookiecutter-flask/cookiecutter-flask"
         values:
-          project_name: ${{ parameters.AppName }}
+          project_name: ${{ parameters.AppName }}  # Make sure this matches the parameter name
     - id: publish:github
       name: Publish to GitHub
       action: publish:github
